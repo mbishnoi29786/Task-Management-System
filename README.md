@@ -16,7 +16,7 @@ The **Task Management System** is a web-based application that helps users manag
 
 ## Features
 
-- User authentication (sign in).
+- User authentication (Sign In, Sign Up).
 - View ongoing tasks and completed tasks.
 - Update task status.
 - Local storage for persistent data management.
@@ -35,21 +35,33 @@ The **Task Management System** is a web-based application that helps users manag
 .
 ├── Done.html
 ├── DoneTasks.js
-├── OngoingTasks.html
-├── Ongoingtask.js
+├── first.js
+├── home.css
+├── Home.html
+├── LICENSE
+├── Ongoingtasks.html
+├── Ongoingtasks.js
+├── README.md
+├── Sign_in_up.css
 ├── SignIn.html
 ├── SignIn.js
-└── home.css
+├── SignUp.html
+├── signup.js
+└── tabletest.html
 
 ```
 
 - **Done.html**: Displays completed tasks.
 - **DoneTasks.js**: JavaScript for managing and displaying completed tasks.
-- **OngoingTasks.html**: Displays ongoing tasks.
-- **Ongoingtask.js**: JavaScript for managing and updating ongoing tasks.
+- **Ongoingtasks.html**: Displays ongoing tasks.
+- **Ongoingtasks.js**: JavaScript for managing and updating ongoing tasks.
 - **SignIn.html**: User sign-in page.
 - **SignIn.js**: JavaScript for handling user sign-in logic.
+- **SignUp.html**: User sign-up page.
+- **signup.js**: JavaScript for handling user sign-up logic.
+- **firstjs.js**: Main JavaScript file managing user session, task creation, and validation. It handles navigation, task management, and user authentication.
 - **home.css**: Stylesheet for the application.
+- **tabletest.html**:  A test HTML file demonstrating the use of jQuery DataTables for displaying tasks in a tabular format.
 
 ## Installation
 
@@ -79,4 +91,4 @@ The **Task Management System** is a web-based application that helps users manag
 Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
 
 ## License
-This project is licensed under the MIT License
+This project is licensed under the MIT License.
