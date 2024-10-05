@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My Tasks</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./home.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='./firstjs.js'></script>
+    <script src='./ongoingtasks.js'></script>
+</head>
+<body>
+    <div class="upperbox">
+        <h1>Task Management System</h1>
+        <p>Manage and Organise Task Effectively!</p>
+        
+    </div>
+    <div class="middlebox">
+        <input type="button" class="button" value="Home" onclick="Home()">
+        <input type="button" id="active" class="button" value="My Tasks" onclick="Ongoing()">
+        <input type="button" class="button" value="Done Tasks" onclick="Done()">
+        <input type="button" id="logout" class="button" value="Log out" onclick="Logout()">
+    </div>
+    <h1 style="font-family: 'Times New Roman', Times, serif; text-align: center; font-weight: bold;">My Tasks</h1>
+       <table id="myTasks" class="taskTable">
+        <tr>
+            <th>Task Id</th>
+            <th>Task Title</th>
+            <th>Description</th>
+            <th>Last Date</th>
+            <th>Task Type</th>
+            <th>Collaborator</th>
+            <th>Created by</th>
+            <th>Update Status</th>
+        </tr>
+    </table>
+</body>
+</html>

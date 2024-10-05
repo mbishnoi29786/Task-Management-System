@@ -1,0 +1,50 @@
+body{
+    background-image: linear-gradient(to bottom, #f5deb3, #e0d5ab, #cdcca4, #bac39e, #a8b999, #a0b295, #99ac90, #92a58c, #91a087, #8f9b82, #8e977d, #8c9279);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    margin: auto;
+    height: 575px;
+}
+h1{
+    text-align: center;
+}
+form{
+    padding: 25px;
+}
+.box{
+    color: black;
+        font-family: 'Times New Roman', Times, serif;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid black;
+        width: auto;
+        padding-top: 7px;
+    }
+#button{
+background-color: black;
+font-family: 'Times New Roman', Times, serif;
+width: 100%;
+cursor: pointer;
+padding: 5px;
+font-weight: bold;
+color: whitesmoke;  
+border-radius: 5px;
+border-color: black;
+}
+#button:hover{
+    background-color: wheat;
+    color: black;
+}
+.box::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    width: auto;
+    }
+.continer {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid;
+    border-radius: 10px;
+}
+    

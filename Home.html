@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Task Management System</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./home.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='./firstjs.js'></script>
+
+
+</head>
+
+<body>
+    <div class="upperbox">
+        <h1>Task Management System</h1>
+        <p>Manage and Organise Task Effectively!</p>
+
+    </div>
+    <div class="middlebox">
+        <input type="button" id="active" class="button" value="Home" onclick="Home()">
+        <input type="button" class="button" value="My Tasks" onclick="Ongoing()">
+        <input type="button" class="button" value="Done Tasks" onclick="Done()">
+        <input type="button" id="logout" class="button" value="Log out" onclick="Logout()">
+    </div>
+    <h1 style="font-family: 'Times New Roman', Times, serif; text-align: center; font-weight: bold;">Home</h1>
+    <div class="main">
+        <input type="button" value="Create New Task" class="button button1" onclick="replace1()">
+        <input type="button" value="Edit/Delete Task" class="button button1" onclick="replace2()">
+        <div class="child" id="div1">
+            <form class="form">
+                <label class="label">Task Title:</label><br>
+                <input type="text" class="text" id="title" placeholder="Enter Task Title"><br>
+                <span id="error"> </span><br>
+                <label class="label">Task Description:</label><br>
+                <input type="text" class="text" id="description" placeholder="Enter Title Description"><br><br>
+                <label class="label">Type of Task:</label><br>
+                <input type="radio" id="solo" value="solo" checked name="taskType" onclick="hide()"><label for="solo"
+                    class="label">Solo Task</label> <br>
+                <Input type="radio" id="group" value="group" name="taskType" onclick="show()"><label for="group"
+                    class="label">Group Task</label><br>
+                <input type="email" id="email" class="text" placeholder="Enter Email">
+                <span id="error1">This Email Doesn't Exist </span><br>
+
+                <!--  <input type="button" id="addemail" class="button button1" onclick="collaborator()" value="Add Collaborators"> -->
+
+
+                <br><br><label class="label">Last Date: </label>
+                <input type="datetime-local" id="lastdate" class="text">
+                <span id="error2"> </span><br>
+                <br>
+                <input type="button" id="createTask" class="insideFormButtons" value="Create Task" onclick="createtask()">
+                <input type="button" id="afterLoadData" class="insideFormButtons" value="Save Changes"
+                    onclick="updateTaskDetail()" style="display: none;">
+                <input type="button" id="delete" class="insideFormButtons" value="Delete Task" onclick="deleteTask()"
+                    style="display: none;">
+            </form>
+        </div>
+        <div class="child" id="div2">
+            <label class="label">Enter task ID:</label>
+            <input type="search" id="search" value="">
+            <input type="button" id="loadData" class="insideFormButtons" value="Load data" onclick="loadData()"><br>
+            <span id="loadError"></span>
+        </div>
+    </div>
+</body>
+
+</html>
