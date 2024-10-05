@@ -68,7 +68,7 @@ The **Task Management System** is a web-based application that helps users manag
 1. Clone the repository:
 
    ```bash
-   git clone [Task Management System](https://github.com/mbishnoi29786/Task-Management-System.git)
+   git clone https://github.com/mbishnoi29786/Task-Management-System.git
    ```
 
 2. Navigate to the project directory:
